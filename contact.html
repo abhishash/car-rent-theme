@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/502bbc38ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true, // Centers the container horizontally by default
+              padding: {
+                DEFAULT: "1rem", // Default padding value for all breakpoints
+                sm: "2rem", // Padding value for small screens and up
+                lg: "4rem", // Padding value for large screens and up
+                xl: "4rem", // Padding value for extra-large screens and up
+              },
+              screens: {
+                sm: "640px", // Breakpoint for small screens
+                md: "768px", // Breakpoint for medium screens
+                lg: "1024px", // Breakpoint for large screens
+                xl: "1280px", // Breakpoint for extra-large screens
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!---------------- Header section--------------->
+    <header class="header z-10 w-full">
+      <div class="bg-gray-900 fixwd top-0">
+        <div
+          class="container mx-auto text-white py-2 flex justify-between items-center"
+        >
+          <div class="">
+            <p class="tracking-wider">7906948573</p>
+          </div>
+          <ul class="flex gap-4 mx-2">
+            <li>
+              <a href="#"><span class="fa fa-youtube"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fa fa-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header class="header sticky top-0 z-10 w-full">
+      <div class="bg-white fixwd top-0">
+        <div class="container mx-auto py-6 flex justify-between items-center">
+          <div class="logo"> <h1 class="text-orange-700 tracking-wider font-bold">AryaWeb Travels</h1></div>
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </nav>
+          <button class="menu-btn" id="menuBtn">&#9776;</button>
+        </div>
+      </div>
+    </header>
+
+    <!----------------------section 1-------------------->
+    <section class="container">
+      <div class="grid grid-cols-12 my-28 gap-6">
+        <div class="col-span-12 md:col-span-6">
+          <div class="">
+            <h5 class="text-orange-500">CONTACT US</h5>
+            <div class="my-5">
+              <h1 class="text-4xl tracking-wide text-gray-500 font-bold">
+                Get in Touch
+              </h1>
+            </div>
+            <form action="">
+              <div class="my-4">
+                <label for="">Your name</label> <br />
+                <input
+                  type="text"
+                  class="border border-solid w-full my-1 p-2"
+                  value=""
+                />
+              </div>
+              <div class="my-4">
+                <label for="">Your email</label> <br />
+                <input
+                  type="text"
+                  class="border border-solid w-full my-1 p-2"
+                  value=""
+                />
+              </div>
+              <div class="my-4">
+                <label for="">Subject</label> <br />
+                <input
+                  type="text"
+                  class="border border-solid w-full my-1 p-2"
+                  value=""
+                />
+              </div>
+              <div class="my-4">
+                <label for="">Your message (optional)</label> <br />
+                <textarea
+                  name=""
+                  id=""
+                  class="border my-1 border-solid w-[100%] h-[12rem]"
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="submit"
+                class="border border-solid font-bold text-2xl rounded-md text-white bg-orange-500 py-3 px-6"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d120219.49922971957!2d77.92599172404674!3d27.217514805386802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3974794fd244e94b%3A0x163a1e478e69bf46!2spolice%20chowki%2C%20Dayal%20Bagh%20Rd%2C%20near%20new%20Agra%2C%20Kishan%20Bagh%2C%20Khandri%2C%20Agra%2C%20Uttar%20Pradesh%20282005!3m2!1d27.2213031!2d78.0047967!5e0!3m2!1sen!2sin!4v1708276675048!5m2!1sen!2sin"
+            width="100%"
+            height="700"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Div2 -->
+    <section class="container my-10">
+      <div class="flex justify-between gap-8 md:justify-center flex-wrap md:flex-row flex-col">
+        <div class="flex ites-start justify-center ">
+          <div class="flex items-start">
+            <i
+              aria-hidden="true"
+              class="fas fa-phone-alt text-orange-500 text-5xl mx-5"
+            ></i>
+            <div>
+              <h1 class="text-xl text-orange-500 tracking-wider font-bold">
+                Phone
+              </h1>
+              <p>+91 076008 01083</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex ites-start justify-center">
+          <i
+            aria-hidden="true"
+            class="fab fa-telegram-plane text-orange-500 text-6xl mx-5"
+          ></i>
+          <div>
+            <h1 class="text-xl text-orange-500 my-1 tracking-wider font-bold">
+              Email
+            </h1>
+            <p>abhisheksinghsci123@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <i
+            aria-hidden="true"
+            class="fas fa-map-marker-alt text-orange-500 text-6xl mx-5"
+          ></i>
+          <div>
+            <h1 class="text-xl text-orange-500 tracking-wider font-bold">
+              Address
+            </h1>
+            <p>
+              police chowki, <br />
+              Dayal Bagh Rd, near new Agra, <br />
+              Kishan Bagh, Khandri, <br />
+              Agra, Uttar Pradesh 282005
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------Footer section--------------->
+    <footer class="mt-10 bg-gray-900 px-8 pt-12">
+      <div class="container mx-auto">
+        <div class="flex justify-between flex-col lg:flex-row gap-8">
+          <div class="text-left">
+            <h4
+              class="mb-4 text-white font-bold text-lg border-l-4 border-orange-500 border-solid leading-0 px-4"
+            >
+              Recently Posts
+            </h4>
+            <ul
+              class="flex flex-wrap flex-col items-left gap-4 justify-center md:justify-start"
+            >
+              <li class="flex text-white gap-4">
+                <image
+                  src="/public/images/blog1.jpg"
+                  width="90"
+                  height="90"
+                  class="rounded-md"
+                />
+                <h1>
+                  police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                  Khandri, Agra, Uttar Pradesh 282005
+                </h1>
+              </li>
+              <li class="flex text-white gap-4">
+                <image
+                  src="/public/images/blo2.jpg"
+                  width="90"
+                  height="90"
+                  class="rounded-md"
+                />
+                <h1>
+                  police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                  Khandri, Agra, Uttar Pradesh 282005
+                </h1>
+              </li>
+              <li class="flex text-white gap-4">
+                <image
+                  src="/public/images/blog3.jpg"
+                  width="90"
+                  height="90"
+                  class="rounded-md"
+                />
+                <h1>
+                  police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                  Khandri, Agra, Uttar Pradesh 282005
+                </h1>
+              </li>
+            </ul>
+          </div>
+          <div class="text-left">
+            <h4
+              class="mb-4 text-white font-bold text-lg border-l-4 border-orange-500 border-solid leading-0 px-4"
+            >
+              Contact Info
+            </h4>
+            <ul
+              class="flex flex-wrap flex-col items-left gap-4 justify-center md:justify-start"
+            >
+              <li class="flex text-white gap-4">
+                <i
+                  aria-hidden="true"
+                  class="fas fa-map-marker-alt text-white"
+                ></i>
+                <div>
+                  <h1>Address</h1>
+                  <p>
+                    police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                    Khandri, Agra, Uttar Pradesh 282005
+                  </p>
+                </div>
+              </li>
+              <li class="flex text-white gap-4">
+                <i aria-hidden="true" class="fas fa-phone-alt text-white"></i>
+                <div>
+                  <h1>Mobile</h1>
+                  <p>076008 01083</p>
+                </div>
+              </li>
+              <li class="flex text-white gap-4">
+                <i aria-hidden="true" class="fa fa-link text-white"></i>
+
+                <div>
+                  <h1>Website</h1>
+                  <p>aryawebcoding.xyz</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between"
+        >
+          <h6 class="text-white text-center w-full font-normal opacity-75">
+            Copyright &copy;
+            <span id="currentYear"></span> SaundaryaTourTravels. All rights
+            reserved. -abhisheksinghsci123@gmail.com
+          </h6>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

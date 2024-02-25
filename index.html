@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/502bbc38ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true, // Centers the container horizontally by default
+              padding: {
+                DEFAULT: "1rem", // Default padding value for all breakpoints
+                sm: "2rem", // Padding value for small screens and up
+                lg: "4rem", // Padding value for large screens and up
+                xl: "4rem", // Padding value for extra-large screens and up
+              },
+              screens: {
+                sm: "640px", // Breakpoint for small screens
+                md: "768px", // Breakpoint for medium screens
+                lg: "1024px", // Breakpoint for large screens
+                xl: "1280px", // Breakpoint for extra-large screens
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!---------------- Header section--------------->
+    <header class="header z-10 w-full">
+      <div class="bg-gray-900 fixwd top-0">
+        <div
+          class="container mx-auto text-white py-2 flex justify-between items-center"
+        >
+          <div class="">
+            <p class="tracking-wider">7906948573</p>
+          </div>
+          <ul class="flex gap-4 mx-2">
+            <li>
+              <a href="#"><span class="fa fa-youtube"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fa fa-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header class="header sticky top-0 z-10 w-full">
+      <div class="bg-white fixwd top-0">
+        <div class="container mx-auto py-6 flex justify-between items-center">
+          <div class="logo">
+            <h1 class="text-orange-700 tracking-wider font-bold">
+              AryaWeb Travels
+            </h1>
+          </div>
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </nav>
+          <button class="menu-btn" id="menuBtn">&#9776;</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ----------Hero section--------- -->
+    <div class="relative min-h-auto mb-20 w-full">
+      <header class="grid !min-h-[30rem] bg-orange-400 px-8">
+        <div
+          class="container mx-auto grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2"
+        >
+          <div class="col-span-1 flex flex-col justify-center items-center">
+            <h1
+              class="mb-4 text-6xl text-center font-extrabold text-white tracking-wide"
+            >
+              CAR RENTAL SERVICES
+            </h1>
+            <h5
+              class="mb-7 tracking-wider text-xl font-extrabold !text-yellow-400 md:pr-16 xl:pr-28"
+            >
+              BEST TAXI SERVICES
+            </h5>
+            <button
+              class="flex justify-center bg-transparent border-4 text-white rounded-full border-solid border-white text-xl py-4 px-8 font-extrabold items-center gap-3"
+            >
+              Book Now
+            </button>
+          </div>
+          <image
+            src="/public/images/car1.png"
+            alt="team work"
+            className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
+          />
+        </div>
+      </header>
+    </div>
+    <!------------Feature Product--------------------->
+    <section class="">
+      <div class="container mx-auto my-20 text-center">
+        <h6
+          color="blue-gray"
+          class="mb-2 text-3xl tracking-wider font-bold uppercase"
+        >
+          WELCOME TO - AryaWeb TOUR TRAVELS
+        </h6>
+        <h5
+          class="mx-auto tracking-wide w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8"
+        >
+          AryaWeb tour & travels arrange to transform your dream India Holiday
+          into a glorious reality full of enjoy, pleasure, wonder and adventure.
+          You are welcome to make travel related enquiries with regard to India
+          tours and tour packages on offer by Call From India . Fill up the
+          Travel Booking form provided below and we’ll revert back with
+          interesting tour options for you
+        </h5>
+      </div>
+      <div
+        class="container mx-auto grid lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 gap-4 gap-y-12"
+      >
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              SWIFT DZIRE
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.11 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car2.png" alt="car 2 image" />
+          </div>
+        </div>
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              TOYOTA ETIOS
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2"><i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i></h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.12 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car3.jpg" alt="car 2 image" />
+          </div>
+        </div>
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              TATA ZEST
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2"><i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i></h1>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.10 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car4.png" alt="car 2 image" />
+          </div>
+        </div>
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              HYUNDAI XCENT
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2"><i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              </h1>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.10 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car2.png" alt="car 2 image" />
+          </div>
+        </div>
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              MARUTI ERTIGA
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-lg font-bold text-center rounded-lg py-2"><i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i></h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.14 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car6.jpg" alt="car 2 image" />
+          </div>
+        </div>
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              TOYOTA INNOVA
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2"><i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i></h1>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.16 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car7.png" alt="car 2 image" />
+          </div>
+        </div>
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              INNOVA CRYSTA
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-lg font-bold text-center rounded-lg py-2"><i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i></h1>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.20 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car8.png" alt="car 2 image" />
+          </div>
+        </div>
+        <div
+          color="transparent"
+          class="border-4 rounded-lg border-gray-600 border-solid p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+        >
+          <div class="bg-orange-500 rounded-md">
+            <h1 class="text-lg font-bold text-white text-center p-2">
+              TEMPO TRAVELLER
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              AVAILABLE
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              <i aria-hidden="true" class="fas fa-star text-yellow-400"></i>
+              
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              Qualified Driver
+            </h1>
+          </div>
+          <div class="border-y-2 border-gray-900 border-solid">
+            <h1 class="text-xl font-bold text-center rounded-lg py-2">
+              RS.28 Km
+            </h1>
+          </div>
+          <div class="my-2 flex justify-center">
+            <button
+              class="bg-orange-500 border-4 duration-500 hover:bg-orange-600 font-bold text-white rounded-full border-solid border-white text-xl py-2 px-4"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <image src="/public/images/car9.jpg" alt="car 2 image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------Best practices------------->
+    <section class="my-10">
+      <div class="container">
+        <div class="flex justify-center flex-col items-center">
+          <h1 class="text-xl font-bold leading-10 tracking-wider py-6">
+            Best Taxi Service
+          </h1>
+          <ul class="list-disc text-gray-500">
+            <li class="leading-7">
+              Our <b>Car Rental</b> Services from Delhi to Agra gives you an
+              affordable rates. We arrange instant booking Taxi services in Agra
+              for Taj Mahal visit and other monuments. We give you budget car
+              rental deals for our customers. Get instant taxi booking online
+              with a luxury and top branded cars available for our customers.
+            </li>
+            <li class="leading-7">
+              AryaWeb TOUR & TRAVELS is a top-most Car Rental Company in Agra
+              and DELHI NCR, India which is completely engaged in providing a
+              large fleet of exclusive cars on rent in Agra to the national as
+              well as international tourists in order to make their travel Safe
+              , Secure ,Sanitized Cabs those are convenient and affordable.
+              Being one of the Best Cabs Rental Company in Agra for Outstation &
+              Oneway Trips.
+            </li>
+            <li class="leading-7">
+              We provide Best Taxi Service and Car Rental Services in your city
+              in Outstation and Oneway trips. But the problem is we have to pay
+              the charges of both the ways. It is all right if we have to come
+              back but it becomes a burden when we only have to reach the
+              destination without returning back.
+            </li>
+            <li class="leading-7">
+              India’s leading intercity Fast & Affordable Taxi Services
+              provider. We take care of the tourists and their needs. And our
+              empathy not just end up at their security and safety, we also take
+              care of money. So, now tourists don’t have to pay the charges of
+              both the way to Delhi. It means if someone Car hires in Agra or
+              wants a Agra to Delhi Taxi Service, he/she have to pay the charges
+              of the taxi services only. With safe ,secure and sanitizied cabs
+              not extra charges.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--------------Number slider ---------------->
+    <section class="bg-orange-500 min-h-[8rem] my-16">
+      <div
+        class="container grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4 justify-between"
+      >
+        <div
+          class="flex items-center justify-start sm:justify-center w-full gap-4"
+        >
+          <!-- <h1>icon</h1> -->
+          <div class="counter-container">
+            <span id="counter">0</span>+
+            <h6 class="text-white text-xl ml-2">Cities to Visit</h6>
+          </div>
+        </div>
+        <div class="flex items-center justify-start sm:justify-center gap-4">
+          <!-- <h1>icon</h1> -->
+          <div class="counter-container1">
+            <span id="counter1" class="">0</span>+
+            <h6 class="text-white text-xl ml-2">Satisfied Customers</h6>
+          </div>
+        </div>
+        <div class="flex items-center justify-start sm:justify-center gap-4">
+          <!-- <h1>icon</h1> -->
+          <div class="counter-container2">
+            <span id="counter2" class="t">0</span>+
+            <h6 class="text-white text-xl ml-2">Return Customers</h6>
+          </div>
+        </div>
+        <div class="flex items-center justify-start sm:justify-center gap-4">
+          <!-- <h1>icon</h1> -->
+          <div class="counter-container3">
+            <span id="counter3">0</span>+
+            <h6 class="text-white text-xl ml-2">Rides Completed</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------Blog Section-------- -->
+    <section class=" ">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-10 justify-center">
+          <div class="col-span-4 flex flex-col justify-center items-center">
+            <h1 class="text-2xl my-4 font-bold">Blog's</h1>
+            <h1 class="text-orange-500 font-bold text-3xl">
+              Latest Blog & News
+            </h1>
+          </div>
+          <div class="relative group">
+            <img
+              src="/public/images/blog1.jpg"
+              alt="Your Image"
+              class="w-full"
+            />
+            <a
+              href="#"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white">View More</span>
+            </a>
+          </div>
+          <div class="relative group">
+            <img
+              src="/public/images/blog3.jpg"
+              alt="Your Image"
+              class="w-full"
+            />
+            <a
+              href="#"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white">View More</span>
+            </a>
+          </div>
+          <div class="relative group">
+            <img
+              src="/public/images/blo2.jpg"
+              alt="Your Image"
+              class="w-full"
+            />
+            <a
+              href="#"
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <span class="text-white">View More</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------Location section----------->
+    <section class="my-16">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-10 justify-center">
+          <div class="col-span-4 flex flex-col justify-center items-center">
+            <h1 class="text-2xl my-4 font-bold">Our Office</h1>
+            <h1 class="text-orange-500 font-bold text-3xl">Location Map</h1>
+          </div>
+          <div class="col-span-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d120219.49922971957!2d77.92599172404674!3d27.217514805386802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3974794fd244e94b%3A0x163a1e478e69bf46!2spolice%20chowki%2C%20Dayal%20Bagh%20Rd%2C%20near%20new%20Agra%2C%20Kishan%20Bagh%2C%20Khandri%2C%20Agra%2C%20Uttar%20Pradesh%20282005!3m2!1d27.2213031!2d78.0047967!5e0!3m2!1sen!2sin!4v1708276675048!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------Footer section--------------->
+    <footer class="mt-10 bg-gray-900 px-8 pt-12">
+      <div class="container mx-auto">
+        <div class="flex justify-between flex-col lg:flex-row gap-8">
+          <div class="text-left">
+            <h4
+              class="mb-4 text-white font-bold text-lg border-l-4 border-orange-500 border-solid leading-0 px-4"
+            >
+              Recently Posts
+            </h4>
+            <ul
+              class="flex flex-wrap flex-col items-left gap-4 justify-center md:justify-start"
+            >
+              <li class="flex text-white gap-4">
+                <image
+                  src="/public/images/blog1.jpg"
+                  width="90"
+                  height="90"
+                  class="rounded-md"
+                />
+                <h1>
+                  police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                  Khandri, Agra, Uttar Pradesh 282005
+                </h1>
+              </li>
+              <li class="flex text-white gap-4">
+                <image
+                  src="/public/images/blo2.jpg"
+                  width="90"
+                  height="90"
+                  class="rounded-md"
+                />
+                <h1>
+                  police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                  Khandri, Agra, Uttar Pradesh 282005
+                </h1>
+              </li>
+              <li class="flex text-white gap-4">
+                <image
+                  src="/public/images/blog3.jpg"
+                  width="90"
+                  height="90"
+                  class="rounded-md"
+                />
+                <h1>
+                  police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                  Khandri, Agra, Uttar Pradesh 282005
+                </h1>
+              </li>
+            </ul>
+          </div>
+          <div class="text-left">
+            <h4
+              class="mb-4 text-white font-bold text-lg border-l-4 border-orange-500 border-solid leading-0 px-4"
+            >
+              Contact Info
+            </h4>
+            <ul
+              class="flex flex-wrap flex-col items-left gap-4 justify-center md:justify-start"
+            >
+              <li class="flex text-white gap-4">
+                <i
+                  aria-hidden="true"
+                  class="fas fa-map-marker-alt text-white"
+                ></i>
+                <div>
+                  <h1>Address</h1>
+                  <p>
+                    police chowki, Dayal Bagh Rd, near new Agra, Kishan Bagh,
+                    Khandri, Agra, Uttar Pradesh 282005
+                  </p>
+                </div>
+              </li>
+              <li class="flex text-white gap-4">
+                <i aria-hidden="true" class="fas fa-phone-alt text-white"></i>
+                <div>
+                  <h1>Mobile</h1>
+                  <p>076008 01083</p>
+                </div>
+              </li>
+              <li class="flex text-white gap-4">
+                <i aria-hidden="true" class="fa fa-link text-white"></i>
+
+                <div>
+                  <h1>Website</h1>
+                  <p>aryawebcoding.xyz</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between"
+        >
+          <h6 class="text-white text-center w-full font-normal opacity-75">
+            Copyright &copy;
+            <span id="currentYear"></span> SaundaryaTourTravels. All rights
+            reserved. -abhisheksinghsci123@gmail.com
+          </h6>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+.counter-container {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+.counter-container1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+.counter-container2 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+.counter-container3 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+/* Ensure the container has relative positioning */
+.relative {
+  position: relative;
+}
+/* Initially hide the link and apply transition */
+.opacity-0 {
+  opacity: 0;
+}
+.transition-opacity {
+  transition-property: opacity;
+}
+/* Show the link on group hover */
+.group:hover .opacity-0 {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #666;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
